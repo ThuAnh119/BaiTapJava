@@ -13,23 +13,19 @@ public class ChuyenDoiTienTe {
 		System.out.print("Nhập lựa chọn của bạn (1 hoặc 2): ");
 		int luaChon = input.nextInt();
 
-		double soTien;
-		double ketQua;
-
-		final double TI_GIA = 23500;
 
 		switch (luaChon) {
 		case 1:
 			System.out.print("Nhập số tiền VND cần chuyển đổi: ");
-			soTien = input.nextDouble();
-			ketQua = soTien / TI_GIA;
-			System.out.println(soTien + " VND = " + ketQua + " USD");
+			float soTienVnd = input.nextFloat();
+			//float ketQuaUsd = soTienVnd / 23.500;
+			System.out.println(soTienVnd + " VND = " + (soTienVnd / 23.500) + " USD");
 			break;
 		case 2:
 			System.out.print("Nhập số tiền USD cần chuyển đổi: ");
-			soTien = input.nextDouble();
-			ketQua = soTien * TI_GIA;
-			System.out.println(soTien + " USD = " + ketQua + " VND");
+			float soTienUsd = input.nextFloat();
+			//float ketQuaVnd = soTienUsd * 23.500;
+			System.out.println(soTienUsd + " USD = " + (soTienUsd * 23.500) + " VND");
 			break;
 		default:
 			System.out.println("Lựa chọn không hợp lệ!");
