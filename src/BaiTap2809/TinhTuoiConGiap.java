@@ -12,7 +12,7 @@ public class TinhTuoiConGiap {
 
 		int conGiap = (namSinh % 12);
 		if (namSinh < 0) {
-			conGiap = (namSinh % 12) + 11;
+			conGiap = (namSinh % 12) + 12;
 		}
 		switch (conGiap) {
 		case 0:
