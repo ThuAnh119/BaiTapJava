@@ -36,7 +36,7 @@ public class MauSoChungLonNhat {
 		mauSoChungLonNhat = x; 
 
 		// In ra kết quả
-		System.out.printf("USCLN của %d và %d là %d\n", a, b, mauSoChungLonNhat);
+		System.out.printf("USCLN của " + a + " và " + b + " là " + mauSoChungLonNhat);
 	}
 
 }
